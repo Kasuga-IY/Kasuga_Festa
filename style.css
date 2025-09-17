@@ -374,15 +374,18 @@ header {
     align-items: center;
     overflow: hidden;
 }
+
 .slide-wrapper {
   display: flex;
   animation: slide-flow 30s infinite linear 1s both;
 }
+
 .slide{
   width: 400px;
   object-fit:cover;
   border: 1px solid #ddd;
 }
+
 @keyframes slide-flow {
      0% {transform: translateX(0);}
  100% {transform: translateX(-100%);}
@@ -468,16 +471,37 @@ header {
 footer {
   background-color: #262262;
   color: #fff;
-  padding: 30px;
+  padding: 15px;
+  padding-bottom: 20px;
 }
 
 footer h2{
   font-size: 36px;
+  padding-bottom: 10px;
 }
 
 footer h3{
-  font-size: 15px;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+.word-list {
+  display: flex;
+  flex-wrap: wrap;    /* 単語間で折り返す */
+  justify-content: center;
+
+}
+
+  .word {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 420px) {
+    .word { font-size: 14px;}
+  }
 
 /*上スクロール*/
 html {
