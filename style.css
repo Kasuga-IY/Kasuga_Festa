@@ -182,7 +182,7 @@ header {
 }
 
   /*スマホ用*/
-@media screen and (max-width: 481px){ 
+@media screen and (max-width: 600px){ 
 @keyframes slideShow { /*0%とか100%の値をいじると枚数変更可*/
   0%   { background-image: url("picture/kari3-4.png"); }
   33%  { background-image: url("picture/kari3-4.png"); }
@@ -223,8 +223,15 @@ header {
 }
 
 .map img{
-  width: 75vmin;
-  height: 75vmin;
+  width: 70vmin;
+  height: 70vmin;
+}
+
+@media screen and (min-width: 700px){ 
+.map img{
+  width: 60vmin;
+  height: 60vmin;
+}
 }
 
 /*タブ切り替え*/

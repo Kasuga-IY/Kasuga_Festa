@@ -5,17 +5,17 @@
 <head>
   <meta charset="utf-8" />
   <title>春日フェスタHP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:site_name" content="春日フェスタHP">
+  <meta name="description" content="2025年10月25日土曜日に春日学園義務教育学校で行われる春日フェスタ公式ホームページです。" />
+  <meta name="robots" content="noindex,nofollow" /><!--検索エンジン除外(できるらしい)-->
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <meta name="description" content="2025年10月25日土曜日に春日学園義務教育学校で行われる春日フェスタ公式ホームページです。" />
-  <meta name="robots" content="noindex,nofollow" /><!--検索エンジン除外(できるらしい)-->
   <link rel="icon" href="picture/rogo2.png" sizes="500x500" type="image/png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--https://www.kagoya.jp/howto/it-glossary/web/responsive/#:~:text=%E7%B6%AD%E6%8C%81%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%96Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9,-%E3%80%8C%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B7%E3%83%96Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-->
-  <meta name="format-detection" content="telephone=no">
-  <meta property="og:site_name" content="春日フェスタHP">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js.js"></script>
 </head>
@@ -27,8 +27,17 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-407R59LF3L');
+  const hostname = window.location.hostname;
+
+  // ✅ 本番環境（GitHub Pages のみ計測）
+  if (hostname === "kasuga-iy.github.io") {
+    gtag('config', 'G-407R59LF3L', {
+      'page_path': '/Kasuga_Festa' + window.location.pathname + window.location.search
+    });
+  }
+  // 🛑 localhost や 127.0.0.1、その他の環境は何もしない
 </script>
+
 
 <meta name="google-site-verification" content="D6gw-zjw-1cZeJU5PvuAtwxpu3NV4Y6KjZ4cfChMwR8" />
 <body>
@@ -76,9 +85,9 @@
       【日時】<br>2025年10月25日 土曜日 8:30~11:30 13:00~??:??<br><br>
       【会場】<br>つくば市立春日学園義務教育学校<br>茨城県つくば市春日２丁目４７番地<br><br>
       【実施内容】<br>-実施内容-<br><br>
-      【お問合せ先】<br>電話：029-856-3110<br>メール：kasuga01@tkb.ed.jp<br>ネット:<a href="https://www.tsukuba-school.jp/inq.php?mode=detail&code=46&code2=0">https://www.tsukuba-school.jp/inq.php?mode=detail&code=46&code2=0</a>
+      【お問合せ先】<br>電話：029-856-3110<br>メール：kasuga01@tkb.ed.jp<br>ネット:<a href="https://www.tsukuba-school.jp/inq.php?mode=detail&code=46&code2=0">https://www.tsukuba-school.jp/inq.php?mode=detail&code=46&code2=0</a><br><br>
+      【お願い】<br>車だめとかチャリとか服装とか
     </p>
-
 </section>
 
 <section id="map"> <!--できれば1:1の画像　でなければcssのvminを変更-->
@@ -91,6 +100,7 @@
     <div>
       <div class="map">
         <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
+        <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
       </div>
     </div>
 
@@ -101,6 +111,7 @@
     <div>
       <div class="map">
         <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
+        <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
       </div>
     </div>
 
@@ -110,6 +121,7 @@
     </label>
     <div>
       <div class="map">
+        <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
         <a href="picture/kari1-1.png" target="_self"><img src="picture/kari1-1.png"></a>
       </div>
     </div>
@@ -143,10 +155,6 @@
       </div>
       <div class="card">
         <h3>【ブース５】</h3>
-        <a href="picture/kariA4yoko.png" target="_self"><img src="picture/kari16-9.png"></a>
-      </div>
-      <div class="card">
-        <h3>【ブース６】</h3>
         <a href="picture/kariA4yoko.png" target="_self"><img src="picture/kari16-9.png"></a>
       </div>
     </div>
@@ -317,6 +325,7 @@
   <h3 class="word">5</h3>
   <h3 class="word">6</h3>
   <h3 class="word">7</h3>
+  <h3 class="woed">（五十音順）</h3>
 </div>
 </footer>
 
