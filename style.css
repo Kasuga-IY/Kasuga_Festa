@@ -9,6 +9,10 @@ body{
   color: #262262;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 section{
   padding: 10px;
   padding-bottom: 30px;
@@ -20,6 +24,11 @@ section{
 h2 {
   font-size: 25px;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h5{
+  margin: 0px;
   margin-bottom: 10px;
 }
 
@@ -97,7 +106,7 @@ nav li {
   top: -150%;
   right: 0;
   width: 250px;
-  height: 100vh;
+  height: 110vh;
   background-color:#262262;
   padding: 20px;
   box-sizing: border-box;
@@ -122,7 +131,6 @@ nav a:hover {
 @media screen and (max-height: 600px){ 
  .menu{
  width: 360px;
- 
 }
 
 .menu ul{
@@ -163,7 +171,7 @@ header {
 
 .slideshow {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,10 +183,10 @@ header {
 
   /*PC・タブレット用*/
 @keyframes slideShow { /*0%とか100%の値をいじると枚数変更可*/
-  0%   { background-image: url("picture/IMG_9450.JPG"); }
-  33%  { background-image: url("picture/IMG_9448.JPG"); }
-  66%  { background-image: url("picture/IMG_9449.JPG"); }
-  100% { background-image: url("picture/IMG_9450.JPG"); }
+  0%   { background-image: url("picture/kari16-9.png"); }
+  33%  { background-image: url("picture/kari16-9.png"); }
+  66%  { background-image: url("picture/kari16-9.png"); }
+  100% { background-image: url("picture/kari16-9.png"); }
 }
 
   /*スマホ用*/
@@ -515,30 +523,3 @@ footer h3{
     .word { font-size: 14px;}
   }
 
-/*上スクロール*/
-html {
-    scroll-behavior: smooth;
-}
-.pagetop {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    background: #fff;
-    border: solid 2px #000;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.pagetop__arrow {
-    height: 10px;
-    width: 10px;
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-    transform: translateY(20%) rotate(-45deg);
-}
-/*上スクロールここまで*/
