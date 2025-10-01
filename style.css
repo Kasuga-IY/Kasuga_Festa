@@ -235,7 +235,7 @@ header {
   width: 45%;
 }
 
-@media screen and (max-width: 700px){ 
+@media screen and (max-width: 900px){ 
   .map{
     float:none
   }
@@ -359,10 +359,38 @@ header {
   margin-left: 30px;
   margin-right: 30px;
   }
+
+  #saigo{
+    float: none;
+  }
 }
 
+#guraund{
+  background-color: #d3e9ff;
+  color: #000;
+}
+
+#abe{
+  background-color: #e0f8e5;
+  color: #000;
+}
+
+#A{
+  background-color: #f7e3ed;
+  color: #000;
+}
+
+#D{
+  background-color: #f8f7e1;
+  color: #000;
+}
 .card img{
   width: 88%;
+}
+
+#border img{
+  border-style: solid;
+  border-width: 1px;
 }
 
 .card h3{
@@ -375,6 +403,10 @@ header {
     float:left;
     width: 33%;
   }
+
+  #saigo{
+    float: left;
+  }
 }
 
 @media screen and (min-width: 1500px){ 
@@ -382,7 +414,12 @@ header {
     float:left;
     width: 25%;
   }
+
+    #saigo{
+    float: none;
+  }
 }
+
 #foto{
   padding-left: 0px;
   padding-right: 0px;
@@ -418,77 +455,6 @@ header {
 }
 }
 
-/*よくある質問*/
-.qa-6 {
-    max-width: 750px;
-    margin-bottom: 5px;
-    border-bottom: 2px solid #262262;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin:  0 auto;  
-}
-
-.qa-6 summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 2em 1em 3em;
-    color: #333333;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.qa-6 summary::before,
-.qa-6 p::before {
-    position: absolute;
-    left: 1em;
-    font-weight: 600;
-    font-size: 1.3em;
-}
-
-.qa-6 summary::before {
-    color: #262262;
-    content: "Q";
-}
-
-.qa-6 summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #333333b3;
-    border-right: 3px solid #333333b3;
-    content: '';
-    transition: transform .5s;
-}
-
-.qa-6[open] summary::after {
-    transform: rotate(225deg);
-}
-
-.qa-6 p {
-    position: relative;
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: .3em 3em 1.5em;
-    color: #333;
-    transition: transform .5s, opacity .5s;
-}
-
-.qa-6[open] p {
-    transform: none;
-    opacity: 1;
-}
-
-.qa-6 p::before {
-    color: #ff8d8d;
-    line-height: 1.2;
-    content: "A";
-}
-/*ここまで*/
-
 footer {
   background-color: #262262;
   color: #fff;
@@ -507,6 +473,13 @@ footer h3{
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media screen and (min-width: 1000px){ 
+ footer{
+  padding-left: 10%;
+  padding-right: 10%;
+ }
 }
 
 .word-list {
