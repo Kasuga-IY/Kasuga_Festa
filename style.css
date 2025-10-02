@@ -294,6 +294,7 @@ header {
 .tab-3 {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .tab-3 > label {
@@ -336,6 +337,11 @@ header {
 }
 
 .tab-3{
+  border-color:  #262262;
+  border-style:dotted; 
+}
+
+.kakomi{
   border-color:  #262262;
   border-style:dotted; 
 }
@@ -384,6 +390,116 @@ header {
   background-color: #f8f7e1;
   color: #000;
 }
+
+.nowrap {
+  white-space: nowrap; /* スクールは絶対に途中で折らない */
+}
+.break {
+  display: inline-block; /* 狭ければここで折れる */
+}
+
+
+@media (max-width: 700px) {
+  .mobile-tab-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+  }
+
+  /* 矢印ボタン */
+  .arrow {
+    width: 40px;
+    height: 40px;
+    background: #262262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .arrow:hover {
+    background: #3a3aa5;
+    transform: scale(1.1);
+  }
+
+  /* 左矢印（三角形） */
+  .arrow.left::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #fff;
+  }
+
+  /* 右矢印（三角形） */
+  .arrow.right::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #fff;
+  }
+
+  /* 中央のタブ名表示 */
+  .mobile-tab {
+    background: #262262;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  #mobileMapContent {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #fff;
+  }
+}
+
+/* PC用タブはスマホ幅では非表示 */
+@media (max-width: 700px) {
+  .tab-3 {
+    display: none !important;
+  }
+  #mobileMapContent {
+    display: block; /* スマホで表示 */
+  }
+}
+
+/* スマホ用タブはPC幅では非表示 */
+@media (min-width: 701px) {
+  .mobile-tab-wrapper,
+  #mobileMapContent {
+    display: none !important;
+  }
+  .tab-3 {
+    display: flex; /* PCで表示 */
+  }
+  .kakomi{
+    border-style: none;
+  }
+}
+
+
+.mobile-tab{
+  width: 180px;
+}
+
+
 .card img{
   width: 88%;
 }
@@ -489,11 +605,11 @@ footer h3{
 
 }
 
-  .word {
-    white-space: nowrap;
-  }
+.word {
+  white-space: nowrap;
+}
   
-  @media (max-width: 420px) {
-    .word { font-size: 14px;}
-  }
+@media (max-width: 420px) {
+  .word { font-size: 14px;}
+}
 

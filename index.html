@@ -86,64 +86,37 @@
     </p>
 </section>
 
-<section id="map"> <!--できれば1:1の画像　でなければcssのvminを変更-->
+<section id="map">
   <h2>・会場マップ・</h2>
-  <h5>↓タブをクリック/タップして切り替え↓</h5>
+
+  <h5>↓タブ/矢印 を クリック/タップ して切り替え↓</h5>
+  <div class="kakomi">
+  <!-- PC用: そのまま -->
   <div class="tab-3">
-    <label>
-      <input type="radio" name="tab-3" checked>
-      全体マップ
-    </label>
-    <div>
-      <div class="map">
-        <img src="picture/map/zentai.png">
-        <img src="picture/map/itiran.png">
-      </div>
-    </div>
+    <label><input type="radio" name="tab-3" checked>全体マップ</label>
+    <div><div class="map"><img src="picture/map/zentai.png"><img src="picture/map/itiran.png"></div></div>
 
-    <label id="guraund">
-      <input type="radio" name="tab-3">
-      グラウンド
-    </label>
-    <div>
-      <div class="map">
-        <img src="picture/map/guraundo.png">
-        <img src="picture/map/itiran.png">
-      </div>
-    </div>
+    <label id="guraund"><input type="radio" name="tab-3">グラウンド</label>
+    <div><div class="map"><img src="picture/map/guraundo.png"><img src="picture/map/itiran.png"></div></div>
 
-    <label id="abe">
-      <input type="radio" name="tab-3">
-      スクールアベニュー
-    </label>
-    <div>
-      <div class="map">
-        <img src="picture/map/abe.png">
-        <img src="picture/map/itiran.png">
-      </div>
-    </div>
+    <label id="abe"><input type="radio" name="tab-3"><span class="nowrap">スクール</span><span class="break">アベニュー</label>
+    <div><div class="map"><img src="picture/map/abe.png"><img src="picture/map/itiran.png"></div></div>
 
-    <label id="A">
-      <input type="radio" name="tab-3">
-      A棟
-    </label>
-    <div>
-      <div class="map">
-        <img src="picture/map/A.png">
-        <img src="picture/map/itiran.png">
-      </div>
-    </div>
+    <label id="A"><input type="radio" name="tab-3">A棟</label>
+    <div><div class="map"><img src="picture/map/A.png"><img src="picture/map/itiran.png"></div></div>
 
-        <label id="D">
-      <input type="radio" name="tab-3">
-      D棟
-    </label>
-    <div>
-      <div class="map">
-        <img src="picture/map/D.png">
-        <img src="picture/map/itiran.png">
-      </div>
-    </div>
+    <label id="D"><input type="radio" name="tab-3">D棟</label>
+    <div><div class="map"><img src="picture/map/D.png"><img src="picture/map/itiran.png"></div></div>
+  </div>
+
+  <!-- スマホ用 -->
+  <div class="mobile-tab-wrapper">
+    <div class="arrow left"></div>
+    <div class="mobile-tab" id="mobileMapTab">全体マップ</div>
+    <div class="arrow right"></div>
+  </div>
+
+  <div id="mobileMapContent"></div>
   </div>
 </section>
 
@@ -163,8 +136,7 @@
     </div>
   
     <label>
-      <input type="radio" name="tab-32">
-      スクールアベニュー
+      <input type="radio" name="tab-32"><span class="nowrap">スクール</span><span class="break">アベニュー</span>
     </label>
     <div>
       <div class="card">
@@ -205,16 +177,17 @@
     </div>
 
     <label>
-      <input type="radio" name="tab-32">
-      外部・行政ブース
+      <input type="radio" name="tab-32"><span class="nowrap">外部・行政</span><span class="break">ブース</span>
     </label>
     <div>
       <div class="card">
         <h3>【ブース名】</h3>
         <img src="picture/kariA4tate.png">
       </div>
+    </div>
   </div>
 </section>
+
 
 <section id="foto">
   <h2>・フォトギャラリー・</h2>
