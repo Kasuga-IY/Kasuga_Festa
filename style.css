@@ -172,32 +172,36 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: slideShow 20s infinite; /* 値を変更して１ループの秒数を変更 */
-  transition: background-image 0.5s ease-in-out; /* 値を変更して１切り替えの時間を変更 */
-  background-color: #c5c5c500;/*白くするよう*/
-  background-blend-mode:overlay;
+  animation: slideShowPC 20s infinite;
+  transition: background-image 0.5s ease-in-out;
+  background-color: #c5c5c500;
+  background-blend-mode: overlay;
 }
 
-  /*PC・タブレット用*/
-@keyframes slideShow { /*0%とか100%の値をいじると枚数変更可*/
+/* PC・タブレット用 */
+@keyframes slideShowPC {
   0%   { background-image: url("picture/suraido/3.jpg"); }
   20%  { background-image: url("picture/suraido/8.jpg"); }
   40%  { background-image: url("picture/suraido/5.jpg"); }
-  60% { background-image: url("picture/suraido/7.jpg"); }
+  60%  { background-image: url("picture/suraido/7.jpg"); }
   80%  { background-image: url("picture/suraido/1.jpg"); }
-  100%   { background-image: url("picture/suraido/3.jpg"); }
+  100% { background-image: url("picture/suraido/3.jpg"); }
 }
 
-  /*スマホ用*/
-@media screen and (max-width: 600px){ 
-@keyframes slideShow { /*0%とか100%の値をいじると枚数変更可*/
-  0%   { background-image: url("picture/suraido/1t.jpg"); }
-  20%  { background-image: url("picture/suraido/2t.jpg"); }
-  40%  { background-image: url("picture/suraido/3t.jpg"); }
-  60% { background-image: url("picture/suraido/4t.jpg"); }
-  80%  { background-image: url("picture/suraido/5t.jpg"); }
-  100%   { background-image: url("picture/suraido/1t.jpg"); }
-}
+/* スマホ用 */
+@media screen and (max-width: 600px) {
+  .slideshow {
+    animation: slideShowSP 20s infinite;
+  }
+
+  @keyframes slideShowSP {
+    0%   { background-image: url("picture/suraido/1t.jpg"); }
+    20%  { background-image: url("picture/suraido/2t.jpg"); }
+    40%  { background-image: url("picture/suraido/3t.jpg"); }
+    60%  { background-image: url("picture/suraido/4t.jpg"); }
+    80%  { background-image: url("picture/suraido/5t.jpg"); }
+    100% { background-image: url("picture/suraido/1t.jpg"); }
+  }
 }
 
 .taitoru{
