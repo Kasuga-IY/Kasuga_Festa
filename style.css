@@ -223,39 +223,39 @@ header {
 
 @media screen and (min-width: 700px){ 
  #gaiyou p{
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
  }
   #gaiyou li{
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
  }
   #uketuke p{
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
  }
   #uketuke li{
-  padding-left: 15%;
-  padding-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
  }
 }
 
 @media screen and (min-width: 1200px){ 
  #gaiyou p{
-  padding-left: 23%;
-  padding-right: 23%;
+  margin-left: 23%;
+  margin-right: 23%;
  }
   #gaiyou li{
-  padding-left: 23%;
-  padding-right: 23%;
+  margin-left: 23%;
+  margin-right: 23%;
  }
   #uketuke p{
-  padding-left: 23%;
-  padding-right: 23%;
+  margin-left: 23%;
+  margin-right: 23%;
  }
   #uketuke li{
-  padding-left: 23%;
-  padding-right: 23%;
+  margin-left: 23%;
+  margin-right: 23%;
  }
 }
 
