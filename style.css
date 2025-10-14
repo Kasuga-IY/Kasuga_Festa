@@ -132,7 +132,7 @@ nav a:hover {
 
 @media screen and (max-height: 700px){ 
  .menu{
- width: 360px;
+ width: 260px;
 }
 
 .menu ul{
@@ -698,3 +698,4 @@ footer h3{
 .word {
   white-space: nowrap;
 }
+
