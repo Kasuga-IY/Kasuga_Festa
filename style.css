@@ -238,6 +238,14 @@ header {
   margin-left: 15%;
   margin-right: 15%;
  }
+   #kouen p{
+  margin-left: 15%;
+  margin-right: 15%;
+ }
+  #kouen li{
+  margin-left: 15%;
+  margin-right: 15%;
+ }
 }
 
 @media screen and (min-width: 1200px){ 
@@ -254,6 +262,14 @@ header {
   margin-right: 23%;
  }
   #uketuke li{
+  margin-left: 23%;
+  margin-right: 23%;
+ }
+   #kouen p{
+  margin-left: 23%;
+  margin-right: 23%;
+ }
+  #kouen li{
   margin-left: 23%;
   margin-right: 23%;
  }
