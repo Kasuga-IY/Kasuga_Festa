@@ -39,6 +39,7 @@ p{
 
 ul{
   list-style-position: inside; /* 点を内側に */
+  padding: 0px;
 }
 
 nav {
@@ -129,7 +130,7 @@ nav a:hover {
   background-position: -100% 0;
 }
 
-@media screen and (max-height: 600px){ 
+@media screen and (max-height: 700px){ 
  .menu{
  width: 360px;
 }
@@ -304,89 +305,88 @@ li{
 }
 
 .tab-32 > label {
-    flex: 1 1;
-    order: -1;
-    min-width: 30px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: #f2f2f2;
-    color: #454545;
-    font-weight: 600;
-    font-size: .9em;
-    text-align: center;
-    cursor: pointer;
+  flex: 1 1;
+  order: -1;
+  min-width: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f2f2f2;
+  color: #454545;
+  font-weight: 600;
+  font-size: .9em;
+  text-align: center;
+  cursor: pointer;
 }
 
 .tab-32 > label:hover {
-    opacity: .8;
+  opacity: .8;
 }
 
 .tab-32 input {
-    display: none;
+  display: none;
 }
 
 .tab-32 > div {
-    display: none;
-    width: 100%;
-    padding: 1.5em 1em;
-    background-color: #fff;
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+  background-color: #fff;
 }
 
 .tab-32 label:has(:checked) {
-    border-bottom: 4px solid #262262;
-    color: #262262;
+  border-bottom: 4px solid #262262;
+  color: #262262;
 }
 
 .tab-32 label:has(:checked) + div {
-    display: block;
+  display: block;
 }
 /*ここまで*/
 /*タブ切り替え*/
 .tab-3 {
-    display: flex;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tab-3 > label {
-    flex: 1 1;
-    order: -1;
-    min-width: 30px;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: #f2f2f2;
-    color: #454545;
-    font-weight: 600;
-    font-size: .9em;
-    text-align: center;
-    cursor: pointer;
+  flex: 1 1;
+  order: -1;
+  min-width: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f2f2f2;
+  color: #454545;
+  font-weight: 600;
+  font-size: .9em;
+  text-align: center;
+  cursor: pointer;
 }
 
 .tab-3 > label:hover {
-    opacity: .8;
+  opacity: .8;
 }
 
 .tab-3 input {
-    display: none;
+  display: none;
 }
 
 .tab-3 > div {
-    display: none;
-    width: 100%;
-    background-color: #fff;
+  display: none;
+  width: 100%;
+  background-color: #fff;
 }
 
 .tab-3 label:has(:checked) {
-    border-bottom: 4px solid #262262;
-    color: #262262;
+  border-bottom: 4px solid #262262;
+  color: #262262;
 }
 
 .tab-3 label:has(:checked) + div {
-    display: block;
+  display: block;
 }
 
 .tab-3{
@@ -405,7 +405,6 @@ li{
 }
 /*PC用*/
 @media screen and (min-width: 600px){ 
-
   .tab-3 {
     margin-left: 30px;
     margin-right: 30px;
