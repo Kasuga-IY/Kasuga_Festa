@@ -130,7 +130,7 @@ nav a:hover {
   background-position: -100% 0;
 }
 
-@media screen and (max-height: 800px){ 
+@media screen and (max-height: 700px){ 
  .menu{
  width: 360px;
 }
@@ -162,7 +162,7 @@ nav a:hover {
   margin-bottom: 3px;
 }
 }
-@media screen and (max-height: 700px){ 
+@media screen and (max-height: 500px){ 
  .menu{
  width: 360px;
 }
@@ -1429,3 +1429,4 @@ footer h3{
 .word {
   white-space: nowrap;
 }
+
