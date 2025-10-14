@@ -132,7 +132,7 @@ nav a:hover {
 
 @media screen and (max-height: 700px){ 
  .menu{
- width: 260px;
+ width: 360px;
 }
 
 .menu ul{
