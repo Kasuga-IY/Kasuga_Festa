@@ -138,38 +138,7 @@ nav a:hover {
 .menu ul{
  width: 200px;
  margin: 0px;
- 
-}
-
-.menu.menu.open{
-  padding-top: 10px;
-  padding-left: 3px;
-}
-
-.menu img{
-  width: 100px;
-  margin-right: 3;
- margin-top: 30px;
-}
-
-.menu a{
-  font-size: 12px;
-  width: 130px;
-}
-
-.menu li{
-  margin: 0px;
-  margin-bottom: 3px;
-}
-}
-@media screen and (max-height: 500px){ 
- .menu{
- width: 360px;
-}
-
-.menu ul{
- width: 200px;
- margin: 0px;
+ float: left;
  
 }
 
@@ -728,14 +697,4 @@ footer h3{
 
 .word {
   white-space: nowrap;
-}
-body{
-  margin: 0;
-  text-align: center;
-  overflow-x: hidden;
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: auto;
-  font-style: normal;
-  color: #262262;
 }
