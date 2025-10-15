@@ -66,7 +66,7 @@ nav li {
 
 nav a {
   display: block;
-  padding: 5px 15px;
+  padding: 4px 15px;
   text-decoration: none;
   color: #ffffff;
   background-image: linear-gradient(to right, transparent 50%, #ffffff 50%);
@@ -77,12 +77,12 @@ nav a {
 } 
 
 nav li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
  
 .hamburger {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   width: 30px;
   cursor: pointer;
@@ -119,7 +119,7 @@ nav li {
 
 .menu.open {
   top: 0;
-  padding-top: 50px;
+  padding-top: 40px;
   border-left-style: dotted;
   border-right-style: dotted;
   border-color: #ffffff;
@@ -130,7 +130,7 @@ nav a:hover {
   background-position: -100% 0;
 }
 
-@media screen and (max-height: 700px){ 
+@media screen and (max-height: 630px){ 
  .menu{
  width: 360px;
 }
@@ -155,7 +155,7 @@ nav a:hover {
 }
 
 .menu a{
-  font-size: 12px;
+  font-size: 11px;
   width: 130px;
 }
 
@@ -165,11 +165,16 @@ nav a:hover {
 }
 }
 
+.menu ul{
+  margin-bottom: 5px;
+}
+
 header {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
 }
+
 
 .slideshow {
   width: 100%;
