@@ -182,8 +182,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: slideShowPC 20s infinite;
-  transition: background-image 0.5s ease-in-out;
+  animation: slideShowPC 25s infinite;
+  transition: background-image 0.4s ease-in-out;
   background-color: #c5c5c500;
   background-blend-mode: overlay;
 }
@@ -191,25 +191,29 @@ header {
 /* PC・タブレット用 */
 @keyframes slideShowPC {
   0%   { background-image: url("picture/suraido/3.jpg"); }
-  20%  { background-image: url("picture/suraido/8.jpg"); }
-  40%  { background-image: url("picture/suraido/5.jpg"); }
-  60%  { background-image: url("picture/suraido/7.jpg"); }
-  80%  { background-image: url("picture/suraido/1.jpg"); }
+  14.2%   { background-image: url("picture/suraido/14.jpg"); }
+  28.4%  { background-image: url("picture/suraido/8.jpg"); }
+  42.6%  { background-image: url("picture/suraido/10.jpg"); }
+  56.8%  { background-image: url("picture/suraido/5.jpg"); }
+  71%  { background-image: url("picture/suraido/7.jpg"); }
+  85.2%  { background-image: url("picture/suraido/1.jpg"); }
   100% { background-image: url("picture/suraido/3.jpg"); }
 }
 
 /* スマホ用 */
 @media screen and (max-width: 600px) {
   .slideshow {
-    animation: slideShowSP 20s infinite;
+    animation: slideShowSP 25s infinite;
   }
 
   @keyframes slideShowSP {
     0%   { background-image: url("picture/suraido/1t.jpg"); }
-    20%  { background-image: url("picture/suraido/2t.jpg"); }
-    40%  { background-image: url("picture/suraido/3t.jpg"); }
-    60%  { background-image: url("picture/suraido/4t.jpg"); }
-    80%  { background-image: url("picture/suraido/5t.jpg"); }
+    14.2%  { background-image: url("picture/suraido/6t.jpg"); }
+    28.4%  { background-image: url("picture/suraido/2t.jpg"); }
+    42.6%  { background-image: url("picture/suraido/7t.jpg"); }
+    56.8%  { background-image: url("picture/suraido/3t.jpg"); }
+    71%  { background-image: url("picture/suraido/4t.jpg"); }
+    85.2%  { background-image: url("picture/suraido/5t.jpg"); }
     100% { background-image: url("picture/suraido/1t.jpg"); }
   }
 }
@@ -655,7 +659,7 @@ li{
 
 .slide-wrapper {
   display: flex;
-  animation: slide-flow 50s infinite linear 1s both;
+  animation: slide-flow 65s infinite linear 1s both;
 }
 
 .slide{
