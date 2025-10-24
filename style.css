@@ -659,7 +659,7 @@ li{
 
 .slide-wrapper {
   display: flex;
-  animation: slide-flow 65s infinite linear 1s both;
+  animation: slide-flow 100s infinite linear 1s both;
 }
 
 .slide{
