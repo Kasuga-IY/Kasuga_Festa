@@ -1,0 +1,110 @@
+/* --- 1. 定数・変数 --- */
+:root {
+  --main-color: #ff4438;
+  --light-color: #feeeed;
+  --back-color: #ffffff;
+  --section-color: #f7f7f7;
+  --h-color: #222222;
+  --p-color: #555555;
+  --akusent-color: #1f2937;
+}
+
+/* --- 2. ベースデザイン --- */
+body {
+  color: #333;
+  line-height: 1.6;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f7f7f4;
+  font-size: 16.5px;
+}
+
+/* ウィンドウ幅が 1024px 以下の場合 */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* ウィンドウ幅が 768px 以下の場合（タブレットなど） */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1 { font-size: 2em; font-weight: bold; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.17em; font-weight: bold; }
+h4 { font-size: 1em; font-weight: bold; }
+li { font-size: 1em; }
+summary {font-size: 1em; font-weight: bold;}
+p { font-size: 1em; }
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0061c8;
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin: 3px 0;
+  padding-left: 40px; /* リストのインデント */
+}
+
+ul { list-style: disc; margin-left: 13px;}
+ol { list-style: decimal; }
+
+.br {
+  color: #ff4d4d;          /* 赤色（少し鮮やかにしています） */
+  font-weight: bold;       /* 太文字 */
+}
+
+/* --- 3. メインコンテンツパーツ --- */
+.right-content {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.right{
+  width: 100%;
+}
+
+h2 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: var(--light-color);
+  border-left-width: 13px;
+  border-left-color: var(--main-color);
+}
+
+.emg{
+  width: 1.6em; height: 1.6em;
+  /*height:2rem;*/
+  float: left;
+  padding-right: 40px;
+}
+
+.emg img{
+  height: 100%;
+}
+
+.license p{
+  font-size: 10px;
+  color: #555555;
+  margin-bottom: 0px;
+}
+.license li{
+  font-size: 10px;
+  color: #555555
+}

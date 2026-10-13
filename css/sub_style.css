@@ -1,0 +1,79 @@
+/* --- ヘッダー --- */
+header {
+  height: 70px;
+  padding-top: 10px;
+  background-color: var(--main-color);
+}
+
+header img {
+  float: left;
+  height: 51px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+/* --- コンテンツエリア --- */
+.right {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+/* --- 戻るボタン --- */
+.back h3 {
+  margin-top: 15px;
+}
+
+.back a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .accordion-003 summary{
+    font-size: 16px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .emg{
+    height: 33px;
+  }
+
+  #more-btn{
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  li{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size:22px;
+    margin-top: 4px;
+  }
+
+  h3{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1{
+    font-size:19px;
+    margin-top: 9px;
+
+  }
+}

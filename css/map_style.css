@@ -1,0 +1,261 @@
+/* --- タブコンテナ --- */
+.tab-1 {
+  width: 100%;
+  margin-top: 15px;
+  border-style: solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-width: 6px;
+  border-top: 0px;
+  border-color: #dbe2e7;
+}
+
+/* --- タブの動作設定 --- */
+.card-group {
+  display: grid;
+  /* 1枚最低270px幅で、入る分だけ横に並べる（はみ出すと自動改行） */
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); 
+  gap: 20px;            /* 写真同士の間隔 */
+  align-items: start;    /* 上揃え */
+  padding: 10px;
+  padding-top: 0px;
+}
+
+/* --- カード表示 --- */
+.card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card img {
+  display: block;
+  width: 100%;           /* 親要素の幅いっぱいに広げる */
+  height: auto;          /* 比率を維持 */
+  max-width: 360px;      /* 横に並ぶときの最大サイズを制限 */
+  object-fit: cover;     /* 写真の比率を保ちつつトリミングして収める */
+  margin:auto;
+}
+
+h4{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.card-big_group h4{
+  margin-bottom: 10px;  
+}
+
+.itiran {
+ width: 98%;
+ margin: 1%;
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+.itiran th {
+ padding: 3px;
+ background: #778ca3;
+ border: solid 1px #666666;
+ color: #ffffff;
+}
+.itiran td {
+ padding: 3px;
+ border: solid 1px #666666;
+}
+
+.naiyou p{
+  margin: 0px;
+  color: rgb(124, 124, 124);
+  font-size: 10px;
+}
+
+
+h5{
+  text-align: center;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.map img{
+  width: 98%;
+  margin: 1%;
+}
+
+  .setumei{
+    font-size: 11px;
+    text-align: center;
+    margin: 0px;
+    color: #6b6b6b;
+  }
+
+
+@media (max-width: 768px) {
+  h4{
+    font-size:13px;
+  }
+
+  h5{
+    font-size:16px;
+  }
+
+  .itiran th ,td{
+    font-size: 12px;
+  }
+
+  .itiran_div_A,.itiran_div_B,.itiran_div_C {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .itiran_div_A table th,
+  .itiran_div_B table th,
+  .itiran_div_C table th,
+  .itiran_div_A table td,
+  .itiran_div_B table td,
+  .itiran_div_C table td {
+    white-space: nowrap;
+  }
+
+  .card-group {
+  display: grid;
+  /* 1枚最低270px幅で、入る分だけ横に並べる（はみ出すと自動改行） */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 5px;            /* 写真同士の間隔 */
+  align-items: start;    /* 上揃え */
+  padding: 5px;
+  padding-top: 0px;
+}
+
+}
+
+.G{
+  background-color: #f3db2560;
+}
+.S{
+  background-color: #25F33760;
+}
+.A{
+  background-color: #25B8F360;
+}
+.D{
+  background-color: #F3256560;
+}
+.C{
+  background-color: #8A25F360;
+}
+
+
+.Gmap{
+  border: 5px #f3db25 solid;
+}
+.Smap{
+  border: 5px #25F337 solid;
+}
+.Amap{
+  border: 5px #25B8F3 solid;
+}
+.Dmap{
+  border: 5px #F32565 solid;
+}
+.Cmap{
+  border: 5px #8A25F3 solid;
+}
+
+#border{
+  border: 1px #dfdfdf solid;
+}
+
+.itiran_div_A table td:nth-child(1),
+.itiran_div_B table td:nth-child(1),
+.itiran_div_C table td:nth-child(1){
+ font-weight: bold;
+}
+
+.itiran_div_A table td:nth-child(1) p,
+.itiran_div_B table td:nth-child(1) p,
+.itiran_div_C table td:nth-child(1) p{
+ font-weight: normal;
+}
+
+.itiran_div_A table tr td:nth-child(3),
+.itiran_div_A table tr th:nth-child(3) {
+  text-align: right;
+  border-left: none;
+  width: 50px;
+  min-width: 50px;
+}
+
+.itiran_div_A table tr td:nth-child(2),
+.itiran_div_A table tr th:nth-child(2) {
+  border-right:none;
+}
+
+.itiran_div_B table tr td:nth-child(4),
+.itiran_div_B table tr th:nth-child(4) {
+  text-align: right;
+  border-left: none;
+  width: 50px;
+  min-width: 50px;
+}
+
+.itiran_div_B table tr td:nth-child(3),
+.itiran_div_B table tr th:nth-child(3) {
+  border-right:none;
+}
+
+
+.itiran_div_C table tr td:nth-child(3),
+.itiran_div_C table tr th:nth-child(3) {
+  text-align: right;
+  border-left: none;
+  width: 50px;
+  min-width: 50px;
+}
+
+.itiran_div_C table tr td:nth-child(2),
+.itiran_div_C table tr th:nth-child(2) {
+  border-right:none;
+}
+
+label{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
+  background-color: #dbe2e7;
+  overflow: hidden;
+}
+
+/* 各ボタンのデザイン */
+label h4 {
+  flex: 1 1;
+  min-width: 70px;
+  padding: .5em .2em;
+  background-color: #dbe2e7;
+  color: #535353;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+label a{
+  display : block;
+  color: #535353;
+  text-decoration: none;
+}
+
+.checked {
+  background-color: #ffffff;
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: #ff4538;
+}
+
+@media (min-width: 1000px) {
+  #map div{
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+}

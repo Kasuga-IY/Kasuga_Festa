@@ -1,482 +1,165 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <title>春日フェスタHP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta property="og:site_name" content="春日フェスタHP">
-  <meta name="description" content="2025年10月25日土曜日に春日学園義務教育学校で行われる春日フェスタ公式ホームページです。" />
-  <meta name="robots" content="noindex,nofollow" /><!--検索エンジン除外(できるらしい)-->
-  <link rel="stylesheet" href="style.css" />
+
+  <title>第２回春日フェスタ特設サイト</title>
+  <meta name="description" content="2026年10月25日・日曜日に行われる第２回春日フェスタの特設サイトです。春日フェスタは、学校と地域がつながり、子どもたちの活動や多彩な企画を通して、世代や立場を超えた交流を生み出すイベントです。子どもたちによるステージ発表や体験型の企画、さまざまな団体・個人による出展など、多くの人が楽しみながら新たな発見や出会いを得られる場を目指しています。本サイトでは、春日フェスタの開催概要をはじめ、企画・出展内容、会場マップ、当日の案内など、来場される皆さまに役立つ情報を発信します。">
+
+  <meta property="og:title" content="第２回春日フェスタ特設サイト">
+  <meta property="og:description" content="2026年10月25日・日曜日に行われる第２回春日フェスタの特設サイトです。春日フェスタは、学校と地域がつながり、子どもたちの活動や多彩な企画を通して、世代や立場を超えた交流を生み出すイベントです。子どもたちによるステージ発表や体験型の企画、さまざまな団体・個人による出展など、多くの人が楽しみながら新たな発見や出会いを得られる場を目指しています。本サイトでは、春日フェスタの開催概要をはじめ、企画・出展内容、会場マップ、当日の案内など、来場される皆さまに役立つ情報を発信します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kasuga-iy.github.io/Kasuga_Festa/">
+  <meta property="og:site_name" content="第２回春日フェスタ特設サイト">
+
+  <link rel="icon" href="picture/sozai/icon3.png">
+
+  <link rel="stylesheet" href="css/destyle/destyle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/main_style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" href="picture/rogo2.png" sizes="500x500" type="image/png" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js.js"></script>
-  <link rel="preload" href="picture/suraido/1t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/2t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/3t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/4t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/5t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/6t.jpg" as="image">
-  <link rel="preload" href="picture/suraido/7t.jpg" as="image">
-</head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-407R59LF3L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- EXTERNAL CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic">
 
-  const hostname = window.location.hostname;
-  if (hostname === "kasuga-iy.github.io") {
-    gtag('config', 'G-407R59LF3L', {
-      'page_path': '/Kasuga_Festa' + window.location.pathname + window.location.search
-    });
-  }
-</script>
-
-<meta name="google-site-verification" content="D6gw-zjw-1cZeJU5PvuAtwxpu3NV4Y6KjZ4cfChMwR8" />
+  <!-- EXTERNAL JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
 <body>
-<div class="slideshow" id="top">
-  <header  id="png">
-    <div class="taitoru">
-      <img src="picture/rogo.png">
+
+  <div class="zentai">
+
+    <div class="left">
+      <main class="main-content">
+        <section class="slideshow">
+          <div class="slideshow-inner">
+            <div class="logo">
+              <img src="picture/sozai/icon1.png" alt="ロゴ">
+            </div>
+            <div class="slides">
+            </div>
+            <div class="pagination">
+            </div>
+          </div> 
+        </section>
+      </main>
     </div>
-  </header>
-</div>
 
-<div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+    <div class="right"><div class="right-content">
+      <section>
+        <h2><div class="emg"><img src="picture/sozai/emoji/emj1.jpg"alt="見出しアイコン"></div>お知らせ</h2>
+        <div class="osirase">
+        <details class="accordion-003">
+          <summary>--/--　第２回春日フェスタ特設サイトがオープンしました!</summary>
+          <p>本日、「第２回 春日フェスタ」の特設サイトをオープンいたしました！<br>今年の開催概要や見どころ、イベントの最新情報などを随時更新してまいります。ぜひチェックしてみてください。<br>皆様のご来場を心よりお待ちしております</p>
+        </details>
+        
+<!--
+        <div id="more-content" class="hidden">
+          <details class="accordion-003">
+            <summary>--/--　記録広報委員会より「記事２」が公開されました。</summary>
+            <p><a href=#news_kirokukouhou>こちらよりご覧ください。</a></p>
+          </details>
+        </div>
+        </div>
+        <button id="more-btn">もっと見る</button>
+-->
+        <div><p>春日フェスタに関するお知らせは<a href="https://www.tsukuba-school.jp/kasuga/">学校HP</a>でも公開されることがあります。合わせてご確認ください。</p></div>
+      </section>
 
-<nav class="menu">
-  <ul>
-    <li><a class="nav" href="#top">トップ</a></li> 
-    <li><a class="nav" href="#posuta-">イベントポスター</a></li> 
-    <li><a class="nav" href="#gaiyou">春日フェスタとは</a></li> 
-    <li><a class="nav" href="#uketuke">受付方法について</a></li>
-    <li><a class="nav" href="#map">会場マップ</a></li> 
-    <li><a class="nav" href="#bu-su">ブース紹介</a></li> 
-    <li><a class="nav" href="#kouen">講演会のお知らせ</a></li> 
-    <li><a class="nav" href="#foto">フォトギャラリー</a></li> 
-    <li><a class="nav" href="#anke-to">アンケートのお願い</a></li>
-  </ul>
-  <img src="picture/rogo.png" width="150px">
-</nav>
+      <section>
+        <h2><div class="emg"><img src="picture/sozai/emoji/emj2.jpg"alt="見出しアイコン"></div>イベントポスター</h2>
+        <div class="posta-">
+          <img src="picture/posuta-.jpg" alt="イベントポスター">
+        </div>
+      </section>
 
-<section id="text">
-<h2>春日フェスタ講演会時間変更と一部中止のお知らせ</h2>
-  <p>10月25日（土）「春日フェスタ」で開催を予定しておりました講演会「災害から身を守るために」長屋和宏先生（12：15～13：00）を都合により中止させていただくことになりました。<br>それに伴い、「赤プル防災あるある講座」の時間を繰り上げ、12：15～13：00で開催いたします。<br>講演会を楽しみにされていた皆様にはご迷惑をおかけしてしまい、お詫び申し上げます。どうぞよろしくお願いします。<br>※パンフレットに記載した時間（13：05～13：35）から変更になっていますのでご注意ください。</p>
-  </section>
-  
-<section id="posuta-">
-  <h2>・イベントポスター・</h2>
-  <img src="picture/posuta-.png" class="posuta-">
-</section>
-
-<section id="gaiyou">
-  <h2>・春日フェスタとは・</h2>
-    <p>
-      春日学園では、防災や環境をテーマにしたイベントを継続して実施し、児童生徒・保護者・地域の皆様・行政・教職員が連携しながら、地域づくりに貢献していきます。<br>
-      こうした活動を通して、有事の際にそれぞれがどう行動すればよいかを学び、地域の防災力向上にもつなげています。また、卒業生がいつでも戻ってこられる「ふるさと」として、春日学園の伝統を育み、地域の一員として活躍できる機会を広げています。
-    </p>
-    <p>
-      【日時】<br>2025年10月25日 土曜日<br><br>
-      【タイムスケジュール】<br>8:20　受付開始<br>8:40　前期課程学習発表会開始（保護者のみ観覧可）<br>8:45　午前の部開始<br>11:30　午前の部終了<br>12:00　午後の部開始<br>15:00　午後の部終了<br><br>
-      【会場】<br>つくば市立春日学園義務教育学校<br><br>
-      【ご来場時のお願い】<br>
-    </p>
-    <ul>
-      <li>展示物にはお手を触れないようにお願いいたします。</li>
-      <li>ゴミは各自お持ち帰りください。</li>
-      <li>SNSなどへの投稿はご遠慮ください。</li>
-      <li>活動の様子が学校ホームページ等に掲載されることがあります。あらかじめご了承ください。</li>
-      <li>自家用車でのご来場はご遠慮ください。</li>
-      <li>当日は飲食の販売もありますが、数に限りがありますのでご心配な方は軽食やお弁当を持参することをお勧めします。</li>
-      <li>昼食の場所は、屋外であればお好きな場所でお取りください。レジャーシート等を敷いてグラウンドで食べることも可能です。ただし、屋内は体育館・D棟３階被服室のみとさせていただきます。また、食べ歩きはご遠慮ください。</li>
-    </ul>
-    <p>
-      <br>
-      皆様のご理解とご協力をよろしくお願いいたします
-    </p>
-</section>
-
-<section id="uketuke">
-  <h2>・当日の受付方法について・</h2>
-  <p>
-      下の事前受付用フォームから登録をお願いいたします。（登録していただいた人数分のリストバンドを配付させていただきます。）
-  </p>
-  <ul>
-    <li>８：２０から受付を開始します。</li>
-    <li>当日は、①受付番号のメール画面または、印刷したもの②本人確認ができるもの（保護者証・自動車運転免許証など）③青のリストバンド（事前配布された場合のみ）の3点をお待ちいただくよう、よろしくお願いします。</li>
-    <li>受付を①<a href="#map">正門</a>（ローソン側）と②<a href="#map">北門</a>（体育館前）の２ヶ所とさせていただきます。その他の場所からは校内に入れませんので、ご注意ください。
-    <li>自転車で来校される方は北門の受付を通り、武道場脇を通って<a href="#map">サブグラウンド</a>へお停めください。（校内は自転車を押していただくよう、よろしくお願いいたします）</li>
-  </ul>
-  <h3><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=fydcRcZNaUySWH4MInVrwE3ZSYNeX3JIrqmPZHzp_A5UNEcyTUVHOVlOUk9KRzRPQTU1NjFER0VRNi4u&origin=QRCode" target="_blank">事前登録用フォームはこちら</a></h3>
-</section>
-
-<section id="map">
-  <h2>・会場マップ・</h2>
-  <h5>↓タブ/矢印 を クリック/タップ して切り替え↓</h5>
-  <div class="kakomi">
-
-  <!-- PC用: そのまま -->
-  <div class="tab-3">
-    <label><input type="radio" name="tab-3" checked>全体マップ</label>
-    <div><div class="map"><img src="picture/map/zentai.png"><img src="picture/map/itiran.png"></div></div>
-
-    <label id="guraund"><input type="radio" name="tab-3">グラウンド</label>
-    <div><div class="map"><img src="picture/map/guraundo.png"><img src="picture/map/itiran.png"></div></div>
-
-    <label id="abe"><input type="radio" name="tab-3"><span class="nowrap">スクール</span><span class="break">アベニュー</label>
-    <div><div class="map"><img src="picture/map/abe.png"><img src="picture/map/itiran.png"></div></div>
-
-    <label id="A"><input type="radio" name="tab-3">A棟</label>
-    <div><div class="map"><img src="picture/map/A.png"><img src="picture/map/itiran.png"></div></div>
-
-    <label id="D"><input type="radio" name="tab-3">D棟</label>
-    <div><div class="map"><img src="picture/map/D.png"><img src="picture/map/itiran.png"></div></div>
-  </div>
-
-  <!-- スマホ用 -->
-  <div class="mobile-tab-wrapper">
-    <div class="arrow left"></div>
-    <div class="mobile-tab" id="mobileMapTab">全体マップ</div>
-    <div class="arrow right"></div>
-  </div>
-
-  <div id="mobileMapContent"></div>
-  </div>
-  <h3>内容・場所等は変更になる場合があります</h3>
-</section>
-
-<section id="bu-su">
-  <h2>・ブース紹介・</h2>
-  <h5>↓タブをクリック/タップして切り替え↓</h5>
-  <div class="tab-32">
-    <label>
-      <input type="radio" name="tab-32" checked>
-      ９年生企画
-    </label>
-    <div>
-      <div class="card">
-        <h3>【避難生活体験】</h3>
-        <img src="picture/bu-su/9g-seikatu.jpg">
-      </div>
-      <div class="card">
-        <h3>【火起こし体験】</h3>
-        <img src="picture/bu-su/9g-tyakka.jpg">
-      </div>
-      <div class="card">
-        <h3>【消火体験】</h3>
-        <img src="picture/bu-su/9s-syouka.jpg">
-      </div>
-      <div class="card" id="border">
-        <h3>【煙体験】</h3>
-        <img src="picture/bu-su/9s-kemuri.jpg">
-      </div>
-      <div class="card">
-        <h3>【ろ過体験】</h3>
-        <img src="picture/bu-su/9d-roka.jpg">
-      </div>
-      <div class="card">
-        <h3>【ミニ竜巻体験】</h3>
-        <img src="picture/bu-su/9a-tatumaki.jpg">
-      </div>
-      <div class="card">
-        <h3>【防災クイズ】</h3>
-        <img src="picture/bu-su/9a-kuizu.jpg">
-      </div>
-      <div class="card">
-        <h3>【救護体験】</h3>
-        <img src="picture/bu-su/9a-kyuugo.jpg">
-      </div>
-      <div class="card">
-        <h3>【ランタン作り】</h3>
-        <img src="picture/bu-su/9a-rantan.jpg">
-      </div>
-      <div class="card">
-        <h3>【防災バックづくり】</h3>
-        <img src="picture/bu-su/9a-bakku.jpg">
-      </div>
-      <div class="card">
-        <h3>【防災すごろく】</h3>
-        <img src="picture/bu-su/9a-sugoroku.jpg">
-      </div>
-    </div>
-  
-    <label>
-      <input type="radio" name="tab-32">
-      ７・８年生企画
-    </label>
-    <div>
-      <div class="card">
-        <h3>【水を使った工作】</h3>
-        <img src="picture/bu-su/71.jpg">
-      </div>
-      <div class="card">
-        <h3>【プランクトン観察】</h3>
-        <img src="picture/bu-su/72.jpg">
-      </div>
+      <section>
+        <h2><div class="emg"><img src="picture/sozai/emoji/emj3.jpg"alt="見出しアイコン"></div>春日フェスタとは</h2>
+        <p>　春日フェスタは、学校と地域がつながり、子どもたちの活動や多彩な企画を通して、世代や立場を超えた交流を生み出すイベントです。子どもたちによるステージ発表や体験型の企画、さまざまな団体・個人による出展など、多くの人が楽しみながら新たな発見や出会いを得られる場を目指しています。<br>　今年度は「春日万博」をテーマとして、昨年度に引き続きフェスタを実施し、児童生徒・保護者・卒業生・地域の皆様・行政・教職員が連携しながら、地域づくりに貢献していきます。卒業生がいつでも戻ってこられる「ふるさと」として、春日学園の伝統を育み、地域の一員として活躍できる機会を広げています。</p>
       
-      <div class="card">
-        <h3>【スポンジ・クリーナー作り】</h3>
-        <img src="picture/bu-su/73.jpg">
+      <div class="gaiyou">
+        <h3>開催概要</h3>
+          <ul>
+           <li>日付：2026年10月25日　日曜日</li>
+           <li>時間：10時00分から13時30分<br>※生徒ブースは11:30より30分間の休憩時間に入ります。</li>
+           <li>会場：つくば市立春日学園義務教育学校</li>
+          </ul>
       </div>
-      <div class="card">
-        <h3>【水質調査体験】</h3>
-        <img src="picture/bu-su/74.jpg">
+      </section>
+
+      <div class="dark">
+        <h3>ご来場時のお願い</h3>
+        <ul>
+          <li><span class="br">SNSなどへの投稿はご遠慮ください。</span></li>
+          <li>自家用車でのご来場はご遠慮ください。</li>
+          <li>展示物にはお手を触れないようにお願いいたします。</li>
+          <li>ゴミは各自お持ち帰りください。</li>
+          <li>活動の様子が学校ホームページ等に掲載されることがあります。あらかじめご了承ください。</li>
+          
+        </ul>
+        <h3>飲食について</h3>
+        <ul>
+          <li>当日は飲食の販売もありますが、数に限りがありますのでご心配な方は軽食やお弁当を持参することをお勧めします。</li>
+          <li>昼食の場所は、屋外であればお好きな場所でお取りください。レジャーシート等を敷いてグラウンドで食べることも可能です。
+          <li>食べ歩きはご遠慮ください。</li>
+        </ul>
+        <p>皆様のご理解とご協力をよろしくお願いいたします。</p>
       </div>
-      <div class="card">
-        <h3>【防災クイズラリー】</h3>
-        <img src="picture/bu-su/81.jpg">
-      </div>
-      <div class="card">
-        <h3>【防災すごろく】</h3>
-        <img src="picture/bu-su/82.jpg">
-      </div>
-      <div class="card">
-        <h3>【ランタン・スリッパ作り】</h3>
-        <img src="picture/bu-su/83.jpg">
+
+      <section>
+        
+        <div class="link">
+          <a href="sub_peages/map.html">
+            <img src="picture/link/bu-su.png" alt="ブース紹介ページへのリンク">
+          </a>
+        </div>
+      </section>
+
+
+    <section>
+      <h2><div class="emg"><img src="picture/sozai/emoji/emj6.jpg" alt="見出しアイコン"></div>当日の受付方法について</h2>
+      <p>下の事前受付用フォームから登録をお願いいたします。（登録していただいた人数分のリストバンドを配付させていただきます。）</p>
+      <ul>
+        <li>８：２０から受付を開始します。</li>
+        <li>受付を①正門（ローソン側）と②北門（体育館前）の２ヶ所とさせていただきます。その他の場所からは校内に入れませんので、ご注意ください。</li>
+        <li>自転車で来校される方は北門の受付を通り、サブグラウンドへお停めください。（校内は自転車を押していただくよう、よろしくお願いいたします）</li>
+        <li><b>＜保護者の方＞<br></b>当日は、①受付番号のメール画面または、印刷したもの②本人確認ができるもの（保護者証・自動車運転免許証など）③青のリストバンドの3点をお持ちいただくよう、よろしくお願いします。</li>
+        <li><b>＜一般の方＞</b><br>当日は、①受付番号のメール画面または、印刷したもの②本人確認ができるもの（保護者証・自動車運転免許証など）の2点をお持ちいただくよう、よろしくお願いします。当日ピンクのリストバンドを配布します。</li><br>
+        
+      </ul>
+      <h3><a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fydcRcZNaUySWH4MInVrwMKlmZa2hUVKnjVH2lkNwShUQUM5S1hCMzdWSTJUWkVWV1pKSFA4NlNWUC4u&origin=QRCode" target="_blank">事前登録フォームはこちらから</a><br>（このフォームでの登録は10月22日木曜日まで可能です。）</h3>
+      
+    </section>
+
+
+      <section>
+        <h2><div class="emg"><img src="picture/sozai/emoji/emj5.jpg" alt="見出しアイコン"></div>アンケートのお願い</h2>
+        <p>短いアンケートにご協力をお願いします。<br>皆様のご意見をもとに、より良いイベントにできるよう努めてまいります。</p>
+        <h3>アンケートは後日公開します。<a></a></h3>
+      </section>
+
+
+      <div class="license"><br>
+        <p>このサイトは一部、第１回春日フェスタの写真を使用しています。</p>
+        <p>このサイトでは以下のオープンソースソフトウェアおよびオープンソースデザインアセットを使用しています</p>
+        <ul>
+          <li>Fluent Emoji(Copyright (c) Microsoft Corporation) - <a href="https://github.com/microsoft/fluentui-emoji" target="_blank">https://github.com/microsoft/fluentui-emoji</a></li>
+          <li>Google Fonts - <a href="https://fonts.google.com/icons" target="_blank">https://fonts.google.com/icons</a></li>
+          <li>destyle.css - <a href="https://github.com/nicolas-cusan/destyle.css" target="_blank">https://github.com/nicolas-cusan/destyle.css</a></li>
+        </ul>
       </div>
     </div>
-
-    <label>
-      <input type="radio" name="tab-32">
-      その他のブース
-    </label>
-    <div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/7.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/8.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/9.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/10.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/11.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/12.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/13.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/14.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/15.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/16.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/17.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/18.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/19.jpg">
-      </div>
+      <footer>
+      <div class="footer"><img src="picture/sozai/icon3.png" alt="フッターのロゴ"></div>
+    </footer>
     </div>
-
-    <label>
-      <input type="radio" name="tab-32">飲食の販売
-    </label>
-    <div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/1.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/2.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/3.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/4.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/5.jpg">
-      </div>
-      <div class="card">
-        <img src="picture/bu-su/innsyoku/6.jpg">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="kouen">
-  <h2>・講演会のお知らせ・</h2>
-  <h3>災害から身を守るために</h3>
-  <p>こちらは都合により中止させていただくことになりました。</p>
-    <p>
-      長屋和宏先生（国土交通省 国土技術政策総合研究所 主任研究官）は、インフラ防災の研究に取り組むとともに、「つくば科学教育マイスター」「防災士」として防災教育にも力を注がれています。レーダー雨量情報を活用した道路管理や、防災カードゲームを通じた子供たちの意識向上に取り組み、年間約40回の出前授業を実施。技術と教育の両面から、防災を支える活動を続けておられます。<br><br>時間：12:15~13:00<br>場所：体育館
-    </p>
-
-    <h3>赤プル流防災あるある講座</h3>
-    <p>
-      芸能人として活動する中、赤プルがなぜ防災士に関心をもったのか。きっかけは、地元茨城県で発生した大規模水害。災害が発生してから考えるのではなく、日常生活、今この瞬間からできる災害対策を知りたい。そして、伝えたい。専門家ではなく、市民目線で「地域防災」を、主婦として知っておきたい「家庭での防災対策」を、分かりやすくお伝えいたします。<br><br>時間：12:15~13:00<br>時間が13:05~13:35から変更になっていますので、ご注意ください。<br>場所：体育館
-    </p>
-</section>
-
-
-<section id="foto">
-  <h2>・フォトギャラリー・</h2>
-  <div class="slide-container">
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/4.jpg">
-      <img class="slide" src="picture/suraido/3.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-      <img class="slide" src="picture/suraido/12.jpg">
-      <img class="slide" src="picture/suraido/20.jpg">
-      <img class="slide" src="picture/suraido/15.jpg">
-      <img class="slide" src="picture/suraido/23.jpg">
-      <img class="slide" src="picture/suraido/6.jpg">
-      <img class="slide" src="picture/suraido/1.jpg">
-      <img class="slide" src="picture/suraido/7.jpg">
-      <img class="slide" src="picture/suraido/2.jpg">
-      <img class="slide" src="picture/suraido/11.jpg">
-    </div>
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/4.jpg">
-      <img class="slide" src="picture/suraido/3.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-      <img class="slide" src="picture/suraido/12.jpg">
-      <img class="slide" src="picture/suraido/20.jpg">
-      <img class="slide" src="picture/suraido/15.jpg">
-      <img class="slide" src="picture/suraido/23.jpg">
-      <img class="slide" src="picture/suraido/6.jpg">
-      <img class="slide" src="picture/suraido/1.jpg">
-      <img class="slide" src="picture/suraido/7.jpg">
-      <img class="slide" src="picture/suraido/2.jpg">
-      <img class="slide" src="picture/suraido/11.jpg">
-    </div>
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/4.jpg">
-      <img class="slide" src="picture/suraido/3.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-      <img class="slide" src="picture/suraido/12.jpg">
-      <img class="slide" src="picture/suraido/20.jpg">
-      <img class="slide" src="picture/suraido/15.jpg">
-      <img class="slide" src="picture/suraido/23.jpg">
-      <img class="slide" src="picture/suraido/6.jpg">
-      <img class="slide" src="picture/suraido/1.jpg">
-      <img class="slide" src="picture/suraido/7.jpg">
-      <img class="slide" src="picture/suraido/2.jpg">
-      <img class="slide" src="picture/suraido/11.jpg">
-    </div>
-  </div>
-  <div class="slide-container">
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/10.jpg">
-      <img class="slide" src="picture/suraido/16.jpg">
-      <img class="slide" src="picture/suraido/18.jpg">
-      <img class="slide" src="picture/suraido/19.jpg">
-      <img class="slide" src="picture/suraido/8.jpg">
-      <img class="slide" src="picture/suraido/14.jpg">
-      <img class="slide" src="picture/suraido/17.jpg">
-      <img class="slide" src="picture/suraido/22.jpg">
-      <img class="slide" src="picture/suraido/9.jpg">
-      <img class="slide" src="picture/suraido/5.jpg">
-      <img class="slide" src="picture/suraido/13.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-
-    </div>
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/10.jpg">
-      <img class="slide" src="picture/suraido/16.jpg">
-      <img class="slide" src="picture/suraido/18.jpg">
-      <img class="slide" src="picture/suraido/19.jpg">
-      <img class="slide" src="picture/suraido/8.jpg">
-      <img class="slide" src="picture/suraido/14.jpg">
-      <img class="slide" src="picture/suraido/17.jpg">
-      <img class="slide" src="picture/suraido/22.jpg">
-      <img class="slide" src="picture/suraido/9.jpg">
-      <img class="slide" src="picture/suraido/5.jpg">
-      <img class="slide" src="picture/suraido/13.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-    </div>
-    <div class="slide-wrapper">
-      <img class="slide" src="picture/suraido/10.jpg">
-      <img class="slide" src="picture/suraido/16.jpg">
-      <img class="slide" src="picture/suraido/18.jpg">
-      <img class="slide" src="picture/suraido/19.jpg">
-      <img class="slide" src="picture/suraido/8.jpg">
-      <img class="slide" src="picture/suraido/14.jpg">
-      <img class="slide" src="picture/suraido/17.jpg">
-      <img class="slide" src="picture/suraido/22.jpg">
-      <img class="slide" src="picture/suraido/9.jpg">
-      <img class="slide" src="picture/suraido/5.jpg">
-      <img class="slide" src="picture/suraido/13.jpg">
-      <img class="slide" src="picture/suraido/21.jpg">
-    </div>
-  </div>
-  
-</section>
-
-<section id="anke-to">
-  <h2>・来場してくださった方へ　アンケートのお願い・</h2>
-  <p>
-    春日フェスタの感想をURLから送れます。ご協力お願いします。
-  </p>
-  <h3><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=fydcRcZNaUySWH4MInVrwM86K_ZyXapNpdQupMVmmdJUNVhNNUhUVks5VkRPU0VXOVZCR1RBRkRaTC4u&origin=QRCode">
-    アンケートはこちらから
-  </a></h3>
-</section>
-
-<footer>
-  <h2>春日フェスタ</h2>
-  <h3>主催</h3>
-  <h3>つくば市立春日学園義務教育学校</h3>
-  <br>
-  <h3>参加協力団体</h3>
-<div class="word-list">
-  <h3 class="word">茨城県環境カウンセラー</h3>
-  <h3 class="word">大堀エンジニアリング</h3>
-  <h3 class="word">国土交通省 国土技術政策総合研究所</h3>
-  <h3 class="word">ざきキャンプ</h3>
-  <h3 class="word">さんＱ</h3>
-  <h3 class="word">自衛隊水戸地方協力本部・古河駐屯地</h3>
-  <h3 class="woed">水彩画同好会</h3>
-  <h3 class="word">台湾カフェ 小玉</h3>
-    <h3 class="woed">つくば警察署</h3>
-  <h3 class="woed">つくば市中央消防署</h3>
-  <h3 class="word">つくば市バースセンター</h3>
-  <h3 class="woed">つくば市役所 危機管理課</h3>
-  <h3 class="word">筑波大学体育スポーツ局</h3>
-  <h3 class="woed">デッサンサークル</h3>
-  <h3 class="word">中村麺兵衛</h3>
-  <h3 class="woed">のびのび姿勢ラボ</h3>
-  <h3 class="word">ハルファーム</h3>
-  <h3 class="word">フレンチレストランB6</h3>
-  <h3 class="woed">防災科学研究所</h3>
-  <h3 class="word">三日月亭</h3>
-  <h3 class="woed">りんどうの会</h3>
-  <h3 class="woed">（五十音順）</h3>
-</div>
-<br>
-</footer>
-
+  </div><script src="js/mottomiru.js"></script><script src="js/slideshow.js"></script>
 </body>
-
 </html>
-
-
